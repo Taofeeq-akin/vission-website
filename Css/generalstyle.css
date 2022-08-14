@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* rubik font */
+@font-face {
+  font-family: Rubik-bold;
+  src: url("/fonts/Rubik/static/Rubik-Bold.ttf");
+}
+
+@font-face {
+  font-family: Rubik-regular;
+  src: url("/fonts/Rubik/static/Rubik-Regular.ttf");
+}
+
+@font-face {
+  font-family: Rubik-light;
+  src: url("/fonts/Rubik/static/Rubik-Light.ttf");
+}
+
+@font-face {
+  font-family: Rubik-medium;
+  src: url("/fonts/Rubik/static/");
+}
+
+/* JOST font*/
+@font-face {
+  font-family: Jost-bold;
+  src: url("/fonts/Jost/static/Jost-Bold.ttf");
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Rubik-light;
+  line-height: 1;
+  color: rgb(45, 45, 45);
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+/* font types */
+.heading-primary {
+  /* font-family: Jost-bold;
+  font-size: 5.5rem;
+  padding-bottom: 2rem; */
+
+  font-family: Jost-bold;
+  color: #fff;
+  font-size: 5.5rem;
+  margin-bottom: 1rem;
+  
+}
+
+.heading-secondary {
+  font-family: Jost-bold;
+  font-size: 3.3rem;
+  margin-bottom: 2rem;
+}
+.heading-tertiarry {
+  font-family: Jost-bold;
+  font-size: 1.8rem;
+  color: #7bc6ff;
+  margin-bottom: 1rem;
+}
+
+.sub-heading {
+  font-family: Jost-bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.sub-heading-blue {
+  color: #78bcf0;
+}
+
+.body-text {
+  font-family: Rubik-light;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  /* margin-bottom: 2rem; */
+}
+.body-text-italics {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* btn Nav */
+.btn-mobile-nav {
+  /* background: none; */
+  border: none;
+  color: #333;
+}
+
+.btn-mobile-nav:hover {
+  cursor: pointer;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  z-index: 20;
+}
+
+.btn-mobile-nav {
+  display: none;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* ------------------ */
+/* grids */
+/* ------------------ */
+.grid {
+  display: grid;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid2 {
+  grid-template-columns: repeat(2, 1fr);
+  /* gap: 2rem; */
+}
+.grid3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+/* .grid5 {
+  grid-template-columns: repeat(5, 1fr);
+} */
+
+.footer-grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 14rem;
+  justify-items: center;
+}
+
+/* icons */
+.small-icons {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* pattern Background */
+.pattern-img {
+  background: rgb(240, 250, 254) url(/img/images/pattern04.png);
+}
